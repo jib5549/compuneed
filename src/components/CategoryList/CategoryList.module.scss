@@ -1,0 +1,28 @@
+.CategoryList {
+    color: var(--text-light);
+    list-style: none;
+    margin-left: -5vmin;
+    font-size: 2.0vw;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    }
+    
+    .CategoryList li {
+    padding: .2.5vmin;
+    border-radius: .5vmin;
+    margin-bottom: .5vmin;
+    font-size: 5vmin;
+    }
+    
+    .CategoryList li:hover:not(.active) {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    }
+    
+    .CategoryList li.active {
+    color: var(--text-dark);
+    background-color: var(--tan-1);
+    border: .1vmin solid var(--tan-3);
+    }

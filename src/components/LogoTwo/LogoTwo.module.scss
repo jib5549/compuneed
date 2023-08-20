@@ -1,0 +1,54 @@
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 8.7vmin;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+  .waviy span:nth-child(2) {
+    --i: 2;
+  }
+  
+  .waviy span:nth-child(3) {
+    --i: 3;
+  }
+  
+  .waviy span:nth-child(4) {
+    --i: 4;
+  }
+  
+  .waviy span:nth-child(5) {
+    --i: 5;
+  }
+  
+  .waviy span:nth-child(6) {
+    --i: 6;
+  }
+  
+  .waviy span:nth-child(7) {
+    --i: 7;
+  }
+  
+  .waviy span:nth-child(8) {
+    --i: 8;
+  }
+  
+  .waviy span:nth-child(9) {
+    --i: 9;
+  }
+  
+  .waviy span:nth-child(10) {
+    --i: 10;
+  }

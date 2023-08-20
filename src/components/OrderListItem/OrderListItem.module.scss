@@ -1,0 +1,36 @@
+.OrderListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vmin;
+    padding: 2vmin;
+    color: var(--text-light);
+    background-color: var(--white);
+    font-size: 2vmin;
+    cursor: pointer;
+    }
+    
+    .OrderListItem > div> div:first-child {
+    margin-bottom: .5vmin;
+    border-color: var(--orange);
+    border-width: .2vmin;
+    cursor: default;
+    font-family: 'VT323', monospace;
+    color: var(--text-light);
+    text-transform: uppercase;
+    }
+    
+    .OrderListItem.selected {
+    border-color: var(--orange);
+    border-width: .2vmin;
+    cursor: default;
+    font-family: 'VT323', monospace;
+    color: var(--text-light);
+    text-transform: uppercase;
+    }
+    
+    .OrderListItem:not(.selected):hover {
+    border-color: var(--orange);
+    border-width: .2vmin;
+    }

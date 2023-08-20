@@ -1,0 +1,11 @@
+.MenuList {
+    background-color: var(--tan-1);
+    margin: 3vmin 0;
+    padding: 3vmin;
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.MenuList::-webkit-scrollbar {
+    display: none;
+  }

@@ -1,0 +1,164 @@
+:root {
+    --white: #FFFFFF;
+    --tan-2: #E7E2DD;
+    --tan-3: #E2D9D1;
+    --tan-4: #D3C1AE;
+    --orange: #F67F00;
+    --text-dark: #615954;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:#202124;
+    padding: 2vmin;
+    height: 100vh;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  .align-ctr {
+    text-align: center;
+  }
+
+  .align-rt {
+    text-align: right;
+  }
+
+  .smaller {
+    border-width: 0.2vmin;
+    cursor: default;
+    font-family: "VT323", monospace;
+    color: var(--text-light);
+    text-transform: uppercase;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .flex-j-end {
+    justify-content: flex-end;
+  }
+
+  .scroll-y {
+    overflow-y: scroll;
+  }
+
+  .section-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--tan-1);
+    color: var(--text-dark);
+    border: .1vmin solid var(--tan-3);
+    padding: .6vmin;
+    text-align: center;
+    font-size: 2vmin;
+  }
+
+  .form-container {
+    padding: 3vmin;
+    background-color:#505050;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+  }
+
+  p.error-message {
+    color: var(--orange);
+    text-align: center;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.25vmin;
+    font-size: 5.7vmin;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-size: 3.4vmin;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    padding: 1vmin;
+    font-size: 2vmin;
+    border: .1vmin solid var(--tan-3);
+    color: var(--text-dark);
+    background-image: none !important; /* prevent lastpass */
+    outline: none;
+  }
+
+  button, a.button {
+    margin: 1vmin;
+    padding: 1vmin;
+    font-size: 2vmin;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border: .1vmin solid var(--tan-2);
+    outline: none;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: var(--orange);
+  }
+
+  button.btn-sm {
+    font-size: 2.5vmin;
+    padding: .6vmin .8vmin;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: var(--orange);
+  }
+
+  .button.btn-sm:hover {
+    cursor: pointer;
+    font-size: 2vmin;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    }
+
+  button.btn-xs {
+    font-size: 1vmin;
+    padding: .7vmin .8vmin;
+    font-family: 'VT323', monospace;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: var(--orange);
+  }
+
+  button:disabled, form:invalid button[type="submit"] {
+    cursor: not-allowed;
+    font-size: 2vmin;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: var(--orange);
+  }
+
+  button[type="submit"] {
+    grid-column: span 2;
+    margin: 1vmin 0 0;
+  }
